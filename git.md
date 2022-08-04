@@ -67,6 +67,12 @@ Es importante registrar usuario y e-mail en git.
 
 `git config --global user.email`: cambia de manera global el email del usuario, seguidamente ponemos entre comillas nuestro nombre.
 
+## Cambiar a main
+
+`git config --global init.defaultBranch main`:cambia el nombre de la rama principal
+
+`git branch -M main`: cambia el nombre de master a main
+
 
 
 ## Terminal
