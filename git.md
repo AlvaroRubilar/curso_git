@@ -105,3 +105,22 @@ history nos muestra un historial de los comandos que hemos utilizado
 
 `rm <nombre del archivo>` me permite borrar un archivo
 OJO en Windows el terminal no es case sensitive (Sensible las mayusculas), con Linux,y UNIX si son case sensitive
+
+## Configurar llaves
+Generar una nueva llave SSH: (Cualquier sistema operativo)
+
+```
+ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+```
+
+Comprobar proceso y agregarlo (Windows)
+
+```
+eval $(ssh-agent - s)
+ssh-add ~/.ssh/id_rsa
+
+```
+En Github agregar la llave y luego cambiar url git con el siguiente comando:
+```
+git remote set-url origin git@github.com:AlvaroRubilar/curso_git
+```
